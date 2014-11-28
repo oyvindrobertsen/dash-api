@@ -7,7 +7,7 @@
             [dash-api.todos.controllers :refer :all]
             [dash-api.todos.routes :refer :all]))
 
-(def api-routes 
+(def api-routes
   (defroutes api-context
     (GET "/" [] (response {:key "word"}))
     (context "/todos" [] todo-routes)))
